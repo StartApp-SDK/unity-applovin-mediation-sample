@@ -163,7 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.startapp.example.applovin
     Standalone: com.DefaultCompany.2DProject
-    iPhone: io.start.iosApplovinMediationSample
+    iPhone: io.start.iosunityapplication
   buildNumber:
     Bratwurst: 0
     Standalone: 0

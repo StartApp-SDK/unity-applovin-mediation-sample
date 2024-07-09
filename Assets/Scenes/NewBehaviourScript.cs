@@ -9,7 +9,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
 
 #if UNITY_IOS
-string adUnitIdTest = "ef20756bc266242c";
+string adUnitIdTest = "3df2576e4b76303a";
 #elif UNITY_ANDROID
 string adUnitIdTest = "6b05ae7a0bf3f276";
 #endif
