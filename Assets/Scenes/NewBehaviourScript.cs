@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using System;
 
@@ -22,7 +23,7 @@ string adUnitIdTest = "6b05ae7a0bf3f276";
         MaxSdk.InitializeSdk();
 
 #if UNITY_IOS
-                        
+        sta_setTestAdsEnabled(true);   
 #elif UNITY_ANDROID
         var sdk = new AndroidJavaClass("com.startapp.sdk.adsbase.StartAppSDK");
         sdk.CallStatic("setTestAdsEnabled", true);
@@ -82,4 +83,10 @@ string adUnitIdTest = "6b05ae7a0bf3f276";
     private void OnInterstitialHiddenEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)
     {
     }
+
+#if UNITY_IOS
+    [DllImport("__Internal")]
+    static extern void sta_setTestAdsEnabled(bool enabled);  
+#endif
+    
 }

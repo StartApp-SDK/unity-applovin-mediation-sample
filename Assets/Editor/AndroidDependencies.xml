@@ -3,4 +3,7 @@
   <androidPackages>
     <androidPackage spec="com.startapp:applovin-mediation:2.+" />
   </androidPackages>
+  <iosPods>
+    <iosPod name="startio-applovin-mediation" version="~> 2.0" bitcodeEnabled="true" minTargetSdk="11.0" addToAllTargets="false" />
+  </iosPods>
 </dependencies>
